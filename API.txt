@@ -1,0 +1,10 @@
+https://rapidapi.com/dev132/api/city-geo-location-lookup
+
+// LOGIN CON GOOGLE
+
+unirest.get("https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=New+York")
+.header("X-RapidAPI-Host", "devru-latitude-longitude-find-v1.p.rapidapi.com")
+.header("X-RapidAPI-Key", "8b821ce24bmsh0611966e7e0d599p1189d3jsn9a9a208b5217")
+.end(function (result) {
+  console.log(result.status, result.headers, result.body);
+});
